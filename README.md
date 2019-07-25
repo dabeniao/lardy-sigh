@@ -84,4 +84,3 @@ show
 ## About
 > Lardy sees the messy log file of a rails server, sighs, and wrote this utility.
 
-
