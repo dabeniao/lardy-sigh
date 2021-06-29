@@ -1,13 +1,10 @@
 import sys
-#import fileinput
 import os
-#import shutil
 
 SHOW_ORPHAN_REQUESTS = False
 
 def doLds(search_terms, files):
     columns = 80
-    #columns = shutil.get_terminal_size((80, 24)).columns
 
     pending = dict()
     num_search_terms = len(search_terms)
@@ -16,8 +13,6 @@ def doLds(search_terms, files):
     hr = '=' * columns
     print(hr)
 
-    #with fileinput.input(files=files) as fp:
-    #    for line in fp:
     for line in sys.stdin:
         hashtag_idx = line.find('#')
         if hashtag_idx < 0:
